@@ -1,0 +1,91 @@
+/** {
+  border: 1px solid pink !important;
+}*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html body {
+  font-family: "Lato";
+  font-weight: 300;
+  color: #404040;
+  background-color: #cce5ff;
+  font-size: 20px;
+  /*background-size: cover;*/
+  /*background-image: url(../images/background-1.jpg);*/
+  /*background-repeat: no-repeat;*/
+}
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+/*#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   width:100%;
+   margin: 0 auto;
+}*/
+
+.header-text {
+  margin: 40px;
+  font-size: 20px;
+}
+
+.margin-adder {
+  margin: 40px;
+}
+
+.contact-image {
+  margin-top: 0.5em;
+  width: 5%;
+}
+
+.quote-line {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+}
+
+.author-text {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.move-adjust {
+  padding-left: 3em;
+}
+
+@media screen and (min-width: 400px) {
+  .title-super {
+    font-size: 40px;
+  }
+
+  .title-h3-text {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 685px) {
+  .title-super {
+    font-size: 40px;
+  }
+  #footer {
+    visibility: visible;
+  }
+}
